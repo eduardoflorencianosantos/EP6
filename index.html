@@ -30,10 +30,12 @@
             <nav>
                 <!-- Início do <ul> -->
                 <ul>
-                    <!-- Ícone -->
-                    <li><a href="#"><img src="Imagens/sino.png" width="55px" alt="#"></a></li>
-                    <!-- Ícone -->
-                    <li><a href="#"><img src="Imagens/login.png" width="55px" alt="#"></a></li>
+                    <!-- Link -->
+                    <li><a href="#">Notificações</a></li>
+                    <!-- Link -->
+                    <li><a href="#">Categorias</a></li>
+                    <!-- Link -->
+                    <li><a href="#">Perfil</a></li>
                 </ul>
                 <!-- Fim do <ul> -->
             </nav>
@@ -57,8 +59,13 @@
                     </p>
                     <!-- Quebra de linha -->
                     <br>
-                    <!-- Imagem -->
-                    <img src="Imagens/" alt="Imagem de um Triângulo Retângulo">
+                    <!-- Início do <figure> -->
+                    <figure>
+                        <!-- Imagem -->
+                        <img src="Imagens/triangulo_retangulo.png" width="500px"
+                            alt="Imagem de um Triângulo Retângulo">
+                    </figure>
+                    <!-- Fim do <figure> -->
                     <!-- Quebra de linha -->
                     <br>
                     <!-- Parágrafo -->
@@ -103,8 +110,12 @@
                     <br>
                     <!-- Parágrafo -->
                     <p><strong>Exemplo:</strong></p>
-                    <!-- Imagem -->
-                    <img src="Imagens/" alt="Imagem de um Teorema de Pitágoras">
+                    <!-- Início do <figure> -->
+                    <figure>
+                        <!-- Imagem -->
+                        <img src="Imagens/" alt="Imagem de um Teorema de Pitágoras">
+                    </figure>
+                    <!-- Fim do <figure> -->
                     <!-- Quebra de linha -->
                     <br>
                     <!-- Parágrafo -->
@@ -150,8 +161,12 @@
                         adjacente.</p>
                     <!-- Quebra de linha -->
                     <br>
-                    <!-- Imagem -->
-                    <img src="Imagens/" alt="Imagem de uma Razão Trigonométrica">
+                    <!-- Início do <figure> -->
+                    <figure>
+                        <!-- Imagem -->
+                        <img src="Imagens/" alt="Imagem de uma Razão Trigonométrica">
+                    </figure>
+                    <!-- Fim do <figure> -->
                     <!-- Quebra de linha -->
                     <br>
                     <!-- Parágrafo -->
@@ -187,9 +202,9 @@
         </main>
         <!-- Fim do <main> -->
         <!-- Início do <aside> -->
-        <aside class="temas_exercicios">
+        <aside class="conteudos_exercicios">
             <!-- Título -->
-            <h3>Temas:</h3>
+            <h3>Conteúdos:</h3>
             <!-- Início do <ul> -->
             <ul>
                 <!-- Matéria -->
@@ -213,12 +228,54 @@
                 <li><a href="#">Razões Trigonométricas</a></li>
             </ul>
             <!-- Fim do <ul> -->
+            <!-- Propaganda -->
+            <a onmouseover="mudar('trianguloretangulo', 'Imagens/triangulo_retangulo_verde.jpg')"
+                onmouseout="mudar('trianguloretangulo', 'Imagens/triangulo_retangulo_branco.png')">
+                <img src="Imagens/triangulo_retangulo_branco.png" id="trianguloretangulo">
+            </a>
         </aside>
         <!-- Fim do <aside> -->
         <!-- Início do <footer> -->
-        <footer>
-            <p>Créditos</p>
-        </footer>
+            <footer>
+                <div class="container-footer">
+                    <div class="row-footer">
+                        <!-- footer col-->
+                        <div class="footer-col">
+                            <h4>Empresa</h4>
+                            <ul>
+                                <li><a href="#"> Quem somos </a></li>
+                                <li><a href=""> nossos serviços </a></li>
+                                <li><a href=""> política de privacidade </a></li>
+                                <li><a href=""> programa de afiliados</a></li>
+                            </ul>
+                        </div>
+                        <!--end footer col-->
+                        <!-- footer col-->
+                        <div class="footer-col">
+                            <h4>Obter ajuda</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Transporte</a></li>
+                                <li><a href="#">devoluções</a></li>
+                                <li><a href="#">Status De Pedido</a></li>
+                                <li><a href="#">Opções De Pagamento</a></li>
+                            </ul>
+                        </div>
+                        <!--end footer col-->
+                        <!-- footer col-->
+                        <div class="footer-col">
+                            <h4>Loja online</h4>
+                            <ul>
+                                <li><a href="#">Relógio</a></li>
+                                <li><a href="#">Saco</a></li>
+                                <li><a href="#">Calçado</a></li>
+                                <li><a href="#">Endereço</a></li>
+                            </ul>
+                        </div>
+                        <!--end footer col-->
+                    </div>
+                </div>
+            </footer>
         <!-- Fim do <footer> -->
     </div>
     <!-- Fim do <div> para o Grid -->
