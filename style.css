@@ -144,6 +144,11 @@ aside a {
     text-decoration: none;
 }
 
+/* Estrutura das propagandas */
+.propaganda {
+    text-align: center;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
 
 /* Parte visual do <footer> */
