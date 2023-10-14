@@ -6,11 +6,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 /* Parte visual do <body> */
 body {
-    background-color: #D3D3D3;
+    background-color: #eee7e7;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -19,58 +20,89 @@ body {
 header {
     background-color: #000;
     color: #fff;
+    box-shadow: rgba(0, 0, 0, .25) 0px 5px 15px;
 }
 
 /* Estrutura do <header> */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
     position: sticky;
     top: 0;
 }
 
-/* Parte visual da logo */
-.logo_trigonometria {
+/* Estrutura do <h1> do <header> */
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Estrutura do <li> do <header> */
+header ul li {
+    list-style: none;
+}
+
+/* Estrutura do <a> do <header> */
+header a {
     color: #fff;
     text-decoration: none;
 }
 
-/* Estrutura do <nav> */
-nav ul {
+/* Estrutura do <nav class="navbar"> */
+.navbar {
+    min-height: 100px;
     display: flex;
-    list-style: none;
-    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+    font-weight: bold;
 }
 
-/* Estrutura do <nav> */
-nav ul {
+/* Estrutura do <ul class="nav-menu"> */
+.nav-menu {
     display: flex;
-    list-style: none;
-    gap: 1rem;
+    align-items: center;
+    gap: 30px;
 }
 
-/* Parte visual dos links do <nav> */
-nav a {
-    color: #fff;
-    text-decoration: none;
+/* Estrutura do <a href="#" class="nav-link"> */
+.nav-link {
+    transition: 0.5s ease;
+}
+
+/* Animação dos links do <header> */
+.nav-link:hover {
+    color: #cecdcd;
+}
+
+/* Estrutura do <div class="hamburger"> */
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+/* Estrutura do <span class="bar"> */
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
 
 /* Estrutura do <article> */
 .news-item {
-    border: 1px solid #333;
     margin: 1.5rem;
-    box-shadow: rgba(0, 0, 0, .34) 4px 6px 8px;
+    box-shadow: rgba(0, 0, 0, .25) 8px 8px 15px;
     padding: 1rem;
     width: 600px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     border-radius: 20px;
-    background-color: #DCDCDC;
+    background-color: #fff;
 }
 
 /* Estrutura do <main> */
@@ -115,8 +147,8 @@ figure {
 .exercicios {
     display: block;
     padding: 10px 20px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #000;
+    color: #fff;
     border-radius: 20px;
     text-decoration: none;
     text-align: center;
@@ -124,12 +156,7 @@ figure {
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
 
-/* Estrutura do <section class="exercicios_para_praticar"> */
-.exercicios_para_praticar {
-    padding: 40px;
-}
-
-/* Estrutura do <aside class="conteudos_exercicios"> */
+/* Estrutura do <class="conteudos_exercicios"> */
 .conteudos_exercicios {
     padding: 40px;
 }
@@ -149,147 +176,70 @@ aside a {
     text-align: center;
 }
 
+/* Estrutura do <h3 class="h3-publicidade"> */
+.h3-publicidade {
+    text-align: center;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
 
 /* Parte visual do <footer> */
 footer {
     background-color: #000;
-    color: #fff;
     padding: 50px 0;
 }
 
-
-.container-footer{
+/* Estrutura do <div class="container-footer"> */
+.container-footer {
     max-width: 1400px;
     padding: 0 4%;
     margin: auto;
 }
 
-
-.row-footer{
+/* Estrutura do <div class="row-footer"> */
+.row-footer {
     display: flex;
     flex-wrap: wrap;
 }
 
-
-.footer-col{
+/* Estrutura do <div class="footer-col"> */
+.footer-col {
     width: 25%;
     padding: 0 15px;
 }
 
-
-.footer-col h4{
+/* Estrutura do <h4> do <div class="footer-col"> */
+.footer-col h4 {
     font-size: 22px;
-    color: white;
+    color: #fff;
     margin-bottom: 20px;
     font-weight: 500;
     position: relative;
     text-transform: uppercase;
 }
 
-
-.footer-col ul{
+/* Estrutura da <ul> do <div class="footer-col"> */
+.footer-col ul {
     list-style: none;
 }
 
-
-.footer-col ul li{
+/* Estrutura do <li> do <div class="footer-col"> */
+.footer-col ul li {
     margin: 10px 0;
+    color: #fff;
 }
-
-
-.footer-col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
-    transition: all 0.3s ease;
-}
-
-
-.footer-col ul li a:hover{
-    color: #cecdcd;
-    padding-left: 10px;
-}
-
-
-.footer-col .medias-socias{
-    margin-top: 30px;
-}
-
-
-.footer-col .medias-socias a{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-    margin: 0 10px 10px 0;
-    text-decoration: none;
-    border-radius: 50%;
-    color: white;
-    border: 1px solid white;
-    transition: all 0.5s ease;
-}
-
-
-.footer-col .medias-socias a i{
-    font-size: 20px;
-}
-
-
-.footer-col .medias-socias a:hover{
-    color: #415aca;
-    background-color: white;
-}
-
-
-.footer-col .form-sub input{
-    width: 100%;
-    padding: 10px;
-    font-size: 15px;
-    outline: none;
-    border: 1px solid white;
-    color: white;
-    background-color: #415aca;
-}
-
-
-.footer-col .form-sub input::placeholder{
-    color: white;
-}
-
-
-.footer-col .form-sub button{
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px; 
-    font-size: 17px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: #415aca;
-    border-radius: 3px;
-    font-weight: bold;
-    background-color: white;        
-}
-
-
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
 
 /* Estrutura do Grid */
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     grid-template-areas:
         "cabeca cabeca cabeca"
         "corpo corpo braco"
         "perna perna perna";
-    gap: 0px 0px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px auto auto;
 }
 
 /* Grid do <header> */
@@ -314,139 +264,121 @@ footer {
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
 
-/* Responsividade para tablet */
-@media (max-width:1075px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "cabeca cabeca cabeca"
-            "corpo braco braco"
-            "perna perna perna";
-        gap: 0px 0px;
+/* Responsividade do <header> */
+@media (max-width:768px) {
+    .hamburguer {
+        display: block;
     }
 
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #000;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+/* Responsividade para computador */
+@media (max-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "cabeca cabeca cabeca"
+            "corpo corpo braco"
+            "perna perna perna";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
 }
 
 /* Responsividade para tablet */
-@media (max-width:955px) {
+@media (max-width:768px) {
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
         grid-template-areas:
             "cabeca cabeca cabeca"
             "corpo corpo corpo"
             "braco braco braco"
             "perna perna perna";
-        gap: 0px 0px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
     }
 
-}
-
-/* Responsividade para tablet */
-@media (max-width:730px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "cabeca cabeca cabeca"
-            "corpo corpo corpo"
-            "braco braco braco"
-            "perna perna perna";
-        gap: 0px 0px;
+    /* O <header> não fica estático */
+    header {
+        position: relative;
     }
 
-}
-
-/* Responsividade para tablet */
-@media (max-width:510px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "cabeca cabeca cabeca"
-            "corpo corpo corpo"
-            "braco braco braco"
-            "perna perna perna";
-        gap: 0px 0px;
+    nav ul {
+        display: none;
     }
 
-}
+    .propaganda {
+        display: none;
+    }
 
-/* Responsividade para celular */
-@media (max-width:505px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "cabeca cabeca cabeca"
-            "corpo corpo corpo"
-            "braco braco braco"
-            "perna perna perna";
-        gap: 0px 0px;
+    .h3-publicidade {
+        display: none;
     }
 }
+
 /* Responsividade para celular */
 @media (max-width:480px) {
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
         grid-template-areas:
-            "cabeca cabeca cabeca"
-            "corpo corpo corpo"
-            "braco braco braco"
-            "perna perna perna";
-        gap: 0px 0px;
+            "cabeca"
+            "corpo"
+            "braco"
+            "perna";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    /* O <header> não fica estático */
+    header {
+        position: relative;
     }
 }
 
-/* Responsividade para celular */
-@media (max-width:380px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "cabeca cabeca cabeca"
-            "corpo corpo corpo"
-            "braco braco braco"
-            "perna perna perna";
-        gap: 0px 0px;
+
+/* Responsividade do <footer> */
+@media (max-width: 800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
     }
 }
 
-/* Responsividade para celular */
-@media (max-width:325px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "cabeca cabeca cabeca"
-            "corpo corpo corpo"
-            "braco braco braco"
-            "perna perna perna";
-        gap: 0px 0px;
-    }
-}
-
-/* Responsividade para celular */
-@media (max-width:325px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "cabeca cabeca cabeca"
-            "corpo corpo corpo"
-            "braco braco braco"
-            "perna perna perna";
-        gap: 0px 0px;
+/* Responsividade do <footer> */
+@media (max-width: 600px) {
+    .footer-col {
+        width: 100%;
     }
 }
