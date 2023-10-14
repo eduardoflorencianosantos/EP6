@@ -330,19 +330,12 @@ footer {
         grid-template-rows: auto auto auto auto;
     }
 
-    /* O <header> não fica estático */
-    header {
-        position: relative;
-    }
-
-    nav ul {
-        display: none;
-    }
-
+    /* Remoção do <div class="propaganda"> */
     .propaganda {
         display: none;
     }
 
+    /* Remoção do <h3 class="h3-publicidade"> */
     .h3-publicidade {
         display: none;
     }
@@ -361,9 +354,14 @@ footer {
         grid-template-rows: auto;
     }
 
-    /* O <header> não fica estático */
-    header {
-        position: relative;
+    /* Remoção do <div class="propaganda"> */
+    .propaganda {
+        display: none;
+    }
+
+    /* Remoção do <h3 class="h3-publicidade"> */
+    .h3-publicidade {
+        display: none;
     }
 }
 
