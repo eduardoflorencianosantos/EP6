@@ -11,7 +11,7 @@
 
 /* Parte visual do <body> */
 body {
-    background-color: #eee7e7;
+    background-color: #ddd5d5;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -70,7 +70,7 @@ header a {
 
 /* Animação dos links do <header> */
 .nav-link:hover {
-    color: #cecdcd;
+    color: #ada9a9;
 }
 
 /* Estrutura do <div class="hamburger"> */
