@@ -18,6 +18,8 @@ function deslocar(objeto, imagem) {
     academia.src = imagem;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
 /* Está chamando o <div class="hamburger"> */
 const hamburguer = document.querySelector(".hamburguer");
 
@@ -29,3 +31,5 @@ hamburguer.addEventListener("click", () => {
     hamburguer.classList.toggle('active');
     navMenu.classList.toggle('active');
 })
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */

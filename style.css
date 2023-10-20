@@ -350,7 +350,7 @@ footer {
             "corpo"
             "braco"
             "perna";
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-rows: auto;
     }
 
