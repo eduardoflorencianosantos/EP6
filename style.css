@@ -11,7 +11,7 @@
 
 /* Parte visual do <body> */
 body {
-    background-color: #ddd5d5;
+    background-color: #F0EBF8;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -20,7 +20,6 @@ body {
 header {
     background-color: #000;
     color: #fff;
-    box-shadow: rgba(0, 0, 0, .25) 0px 5px 15px;
 }
 
 /* Estrutura do <header> */
@@ -264,6 +263,8 @@ footer {
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
 
+/* Responsividade da página principal */
+
 /* Responsividade para computador */
 @media (max-width: 1024px) {
     .container {
@@ -378,4 +379,90 @@ footer {
     .footer-col {
         width: 100%;
     }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Formulário */
+
+/* Estrutura do Grid do formulário */
+.xtriangulo {
+    display: grid;
+    grid-template-areas:
+        "cabeca cabeca cabeca"
+        "corpo corpo corpo"
+        "perna perna perna";
+    grid-template-columns: auto 100% auto;
+    grid-template-rows: auto auto auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Responsividade da página de formulário */
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Estrutura do <main> */
+.main-triangulo {
+    display: flex;
+    margin: 1rem;
+    gap: 5rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Parte visual do <article> */
+.article-formulario {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, .25) 8px 8px 15px;
+}
+
+/* Estrutura do <article> */
+.article-formulario {
+    margin: 1.5rem;
+    padding: 2.5rem;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Título da matéria no formulário */
+.h1-formulario {
+    text-align: center;
+}
+
+/* Quando o usuário acerta, irá aparecer uma mensagem verde */
+.verde {
+    color: #008000;
+}
+
+/* Quando o usuário erra, irá aparecer uma mensagem vermelha */
+.vermelho {
+    color: #ff0000;
+}
+
+/* Estrutura da quantidade de acertos */
+.quantidade_acertos {
+    text-align: center;
+}
+
+/* Parte visual do botão "Enviar" do formulário */
+.botao-formulario {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* Estrutura do botão "Enviar" do formulário */
+.botao-formulario {
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
 }
