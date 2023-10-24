@@ -451,14 +451,14 @@ footer {
     text-align: center;
 }
 
-/* Parte visual do botão "Enviar" do formulário */
+/* Parte visual do botão "Resultado" do formulário */
 .botao-formulario {
     background-color: #000;
     color: #fff;
     border-radius: 20px;
 }
 
-/* Estrutura do botão "Enviar" do formulário */
+/* Estrutura do botão "Resultado" do formulário */
 .botao-formulario {
     border: 0;
     padding: 10px 20px;
