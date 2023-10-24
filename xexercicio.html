@@ -10,7 +10,7 @@
     <!-- Permite responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Nome da página na aba do navegador -->
-    <title>Exercícios de Múltipla Escolha - Matemática em Ação</title>
+    <title>Exercícios de Múltipla Escolha - Matemática</title>
     <!-- Estilização com CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Imagem na aba do navegador -->
@@ -23,172 +23,57 @@
 
 <body onload="nome()">
     <!-- Início do <div> -->
-    <div class="container-triangulo">
-<!-- Início do <header> -->
-    <header>
-        <!-- Início do <nav> -->
-        <nav class="navbar">
-            <!-- Logo -->
-            <a href="index.html">
-                <h1>Matemática</h1>
-            </a>
-            <!-- Início do <ul> -->
-            <ul class="nav-menu">
-                <!-- Link -->
-                <li class="nav-item"><a href="#" class="nav-link">Notificações</a></li>
-                <!-- Link -->
-                <li class="nav-item"><a href="#" class="nav-link">Categoria</a></li>
-                <!-- Link -->
-                <li class="nav-item"><a href="#" class="nav-link">Histórico</a></li>
-                <!-- Link -->
-                <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
-            </ul>
-            <!-- Fim do <ul> -->
-            <!-- Início do <div> -->
-            <div class="hamburguer">
-                <!-- Início do menu -->
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <!-- Fim do menu -->
-            </div>
-            <!-- Fim do <div> -->
-        </nav>
-        <!-- Fim do <nav> -->
-    </header>
-    <!-- Fim do <header> -->
-    <!-- Início do <main> -->
-    <main class="main-triangulo">
-        <!-- Início do <article> -->
-        <article class="article-formulario">
-            <!-- Nome do usuário -->
-            <p id="nome"></p>
-            <!-- Linha -->
-            <hr>
-            <!-- Título -->
-            <h1 class="h1-formulario">Triângulo Retângulo</h1>
-            <!-- Início do <form> -->
-            <form>
-                <!-- Pergunta -->
-                <p><strong>1. Qual é o nome dos lados que não formam o angulo reto em lados opostos em um triângulo
-                        retângulo?</strong></p><br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_1" value="correta"> Cateto. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_1" value="errada"> Adjacente. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_1" value="errada"> Hipotenusa. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_1" value="errada"> Ângulo reto. <br><br>
-                <!-- Resposta correta -->
-                <p id="resposta_correta_1" class="verde"></p>
-                <!-- Resposta errada -->
-                <p id="resposta_errada_1" class="vermelho"></p><br>
-
-                <!-- Pergunta -->
-                <p><strong>2. Quais são as nomenclaturas dos lados do triângulo retângulo?</strong></p><br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_2" value="errada"> Cateto e Adjacente. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_2" value="errada"> Hipotenusa e Ângulo Reto. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_2" value="errada"> Cateto e Oposto. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_2" value="correta"> Cateto e Hipotenusa. <br><br>
-                <!-- Resposta correta -->
-                <p id="resposta_correta_2" class="verde"></p>
-                <!-- Resposta errada -->
-                <p id="resposta_errada_2" class="vermelho"></p><br>
-
-                <!-- Pergunta -->
-                <p><strong>3. Qual é o nome do lado oposto ao ângulo reto em um triângulo retângulo?</strong></p><br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_3" value="errada"> Cateto. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_3" value="errada"> Adjacente. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_3" value="errada"> Oposto <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_3" value="correta"> Hipotenusa <br><br>
-                <!-- Resposta correta -->
-                <p id="resposta_correta_3" class="verde"></p>
-                <!-- Resposta errada -->
-                <p id="resposta_errada_3" class="vermelho"></p><br>
-
-                <!-- Pergunta -->
-                <p><strong>4. Qual é a relação matemática entre os lados de um triângulo retângulo?</strong></p><br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_4" value="correta"> Teorema de Pitágoras <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_4" value="errada"> Teorema de Tales <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_4" value="errada"> Teorema de Heron <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_4" value="errada"> Lei dos senos <br><br>
-                <!-- Resposta correta -->
-                <p id="resposta_correta_4" class="verde"></p>
-                <!-- Resposta errada -->
-                <p id="resposta_errada_4" class="vermelho"></p><br>
-            </form>
-            <!-- Fim do <form> -->
-
+    <div class="container_triangulo">
+        <!-- Início do <header> -->
+        <header>
+            <!-- Início do <nav> -->
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html">
+                    <h1>Matemática</h1>
+                </a>
+                <!-- Início do <ul> -->
+                <ul class="nav-menu">
+                    <!-- Link -->
+                    <li class="nav-item"><a href="#" class="nav-link">Notificações</a></li>
+                    <!-- Link -->
+                    <li class="nav-item"><a href="#" class="nav-link">Categoria</a></li>
+                    <!-- Link -->
+                    <li class="nav-item"><a href="#" class="nav-link">Histórico</a></li>
+                    <!-- Link -->
+                    <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
+                </ul>
+                <!-- Fim do <ul> -->
+                <!-- Início do <div> -->
+                <div class="hamburguer">
+                    <!-- Início do menu -->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <!-- Fim do menu -->
+                </div>
+                <!-- Fim do <div> -->
+            </nav>
+            <!-- Fim do <nav> -->
+        </header>
+        <!-- Fim do <header> -->
+        <!-- Início do <main> -->
+        <main class="main-triangulo">
+            <!-- Início do <article> -->
+            <article class="article-formulario">
+                <!-- Nome do usuário -->
+                <strong>
+                    <p id="nome"></p>
+                </strong>
+                <!-- Linha -->
+                <hr>
                 <!-- Título -->
-            <h1 class="h1-formulario">Teorema de Pitágoras</h1>
-            <!-- Início do <form> -->
-            <form>
-                <!-- Pergunta -->
-                <p><strong>1. Encontre o valor x utilizando o Teorema de Pitágoras:</strong></p><br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_5" value="errada"> 12. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_5" value="errada"> 7. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_5" value="correta"> 10. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_5" value="errada"> 14. <br><br>
-                <!-- Resposta correta -->
-                <p id="resposta_correta_5" class="verde"></p>
-                <!-- Resposta errada -->
-                <p id="resposta_errada_5" class="vermelho"></p><br>
-
-                <!-- Pergunta -->
-                <p><strong>2. Encontre o valor x utilizando o Teorema de Pitágoras:</strong></p><br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_6" value="errada"> 5. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_6" value="errada"> 9. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_6" value="errada"> 4. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_6" value="correta"> 3. <br><br>
-                <!-- Resposta correta -->
-                <p id="resposta_correta_6" class="verde"></p>
-                <!-- Resposta errada -->
-                <p id="resposta_errada_6" class="vermelho"></p><br>
-
-                <!-- Pergunta -->
-                <p><strong>3. Encontre o valor x utilizando o Teorema de Pitágoras:</strong></p><br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_7" value="errada"> Errado. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_7" value="correta"> Certo. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_7" value="errada"> Errado. <br>
-                <!-- Alternativa -->
-                <input type="radio" name="questao_7" value="errada"> Errado. <br><br>
-                <!-- Resposta correta -->
-                <p id="resposta_correta_7" class="verde"></p>
-                <!-- Resposta errada -->
-                <p id="resposta_errada_7" class="vermelho"></p><br>
-            </form>
-            <!-- Fim do <form> -->
-
-                <!-- Título -->
-                <h1 class="h1-formulario">Razões Trigonométricas</h1>
+                <h1 class="h1-formulario">Triângulo Retângulo</h1>
                 <!-- Início do <form> -->
                 <form>
                     <!-- Pergunta -->
-                    <p><strong>1. Dado o triângulo a seguir, calcule o seno, cosseno e tangente dos ângulos a e b:</strong></p><br>
+                    <p><strong>1. Qual é o nome dos lados que não formam o angulo reto em lados opostos em um triângulo
+                            retângulo?</strong></p><br>
                     <!-- Alternativa -->
                     <input type="radio" name="questao_1" value="correta"> Cateto. <br>
                     <!-- Alternativa -->
@@ -201,9 +86,9 @@
                     <p id="resposta_correta_1" class="verde"></p>
                     <!-- Resposta errada -->
                     <p id="resposta_errada_1" class="vermelho"></p><br>
-    
+
                     <!-- Pergunta -->
-                    <p><strong>2. Dado o triângulo a seguir, calcule o seno, cosseno e tangente dos ângulos a e b:</strong></p><br>
+                    <p><strong>2. Quais são as nomenclaturas dos lados do triângulo retângulo?</strong></p><br>
                     <!-- Alternativa -->
                     <input type="radio" name="questao_2" value="errada"> Cateto e Adjacente. <br>
                     <!-- Alternativa -->
@@ -216,9 +101,10 @@
                     <p id="resposta_correta_2" class="verde"></p>
                     <!-- Resposta errada -->
                     <p id="resposta_errada_2" class="vermelho"></p><br>
-    
+
                     <!-- Pergunta -->
-                    <p><strong>3. Dado o triângulo a seguir, calcule o seno, cosseno e tangente dos ângulos a e b:</strong></p><br>
+                    <p><strong>3. Qual é o nome do maior lado do triângulo retângulo?</strong></p>
+                    <br>
                     <!-- Alternativa -->
                     <input type="radio" name="questao_3" value="errada"> Cateto. <br>
                     <!-- Alternativa -->
@@ -231,7 +117,153 @@
                     <p id="resposta_correta_3" class="verde"></p>
                     <!-- Resposta errada -->
                     <p id="resposta_errada_3" class="vermelho"></p><br>
-    
+
+                    <!-- Pergunta -->
+                    <p><strong>4. Qual é a relação matemática entre os lados de um triângulo retângulo?</strong></p><br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_4" value="correta"> Teorema de Pitágoras <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_4" value="errada"> Teorema de Tales <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_4" value="errada"> Teorema de Heron <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_4" value="errada"> Lei dos senos <br><br>
+                    <!-- Resposta correta -->
+                    <p id="resposta_correta_4" class="verde"></p>
+                    <!-- Resposta errada -->
+                    <p id="resposta_errada_4" class="vermelho"></p><br>
+                </form>
+                <!-- Fim do <form> -->
+
+                <!-- Título -->
+                <h1 class="h1-formulario">Teorema de Pitágoras</h1>
+                <!-- Início do <form> -->
+                <form>
+                    <!-- Pergunta -->
+                    <p><strong>1. Encontre o valor x utilizando o Teorema de Pitágoras:</strong></p><br>
+                    <!-- Início do <figure> -->
+                    <figure>
+                        <!-- Imagem -->
+                        <img src="Imagens/pitagoras1.png" width="300px" alt="Triângulo Retângulo"><br><br>
+                    </figure>
+                    <!-- Fim do <figure> -->
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_5" value="errada"> 12. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_5" value="errada"> 7. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_5" value="correta"> 10. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_5" value="errada"> 14. <br><br>
+                    <!-- Resposta correta -->
+                    <p id="resposta_correta_5" class="verde"></p>
+                    <!-- Resposta errada -->
+                    <p id="resposta_errada_5" class="vermelho"></p><br>
+
+                    <!-- Pergunta -->
+                    <p><strong>2. Encontre o valor x utilizando o Teorema de Pitágoras:</strong></p><br>
+                    <!-- Início do <figure> -->
+                    <figure>
+                        <!-- Imagem -->
+                        <img src="Imagens/pitagoras2.png" width="300px" alt="Triângulo Retângulo"><br><br>
+                    </figure>
+                    <!-- Fim do <figure> -->
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_6" value="errada"> 5. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_6" value="errada"> 9. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_6" value="errada"> 4. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_6" value="correta"> 3. <br><br>
+                    <!-- Resposta correta -->
+                    <p id="resposta_correta_6" class="verde"></p>
+                    <!-- Resposta errada -->
+                    <p id="resposta_errada_6" class="vermelho"></p><br>
+
+                    <!-- Pergunta -->
+                    <p><strong>3. Encontre o valor x utilizando o Teorema de Pitágoras:</strong></p><br>
+                    <!-- Início do <figure> -->
+                    <figure>
+                        <!-- Imagem -->
+                        <img src="Imagens/pitagoras3.png" width="300px" alt="Triângulo Retângulo"><br><br>
+                    </figure>
+                    <!-- Fim do <figure> -->
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_7" value="errada"> 15. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_7" value="correta"> 20. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_7" value="errada"> 18. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_7" value="errada"> 24. <br><br>
+                    <!-- Resposta correta -->
+                    <p id="resposta_correta_7" class="verde"></p>
+                    <!-- Resposta errada -->
+                    <p id="resposta_errada_7" class="vermelho"></p><br>
+                </form>
+                <!-- Fim do <form> -->
+
+                <!-- Título -->
+                <h1 class="h1-formulario">Razões Trigonométricas</h1>
+                <!-- Início do <form> -->
+                <form>
+                    <!-- Enunciado -->
+                    <p><strong>Dado o triângulo a seguir, calcule o seno, cosseno e tangente dos ângulos a e
+                            b:</strong></p><br>
+                    <!-- Início do <figure> -->
+                    <figure>
+                        <!-- Imagem -->
+                        <img src="Imagens/trigonometricas1.png" width="300px" alt="Triângulo Retângulo"><br><br>
+                    </figure>
+                    <!-- Fim do <figure> -->
+                    <!-- Pergunta -->
+                    <p><strong>1. Calcule o seno de a e b:</strong></p><br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_8" value="correta"> seno a = 64/100 e seno b = 36/100. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_8" value="errada"> seno a = 64/36 e seno b = 36/64. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_8" value="errada"> seno a = 36/100 e seno b = 64/100. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_8" value="errada"> seno a = 36/64 e seno b = 64/36. <br><br>
+                    <!-- Resposta correta -->
+                    <p id="resposta_correta_8" class="verde"></p>
+                    <!-- Resposta errada -->
+                    <p id="resposta_errada_8" class="vermelho"></p><br>
+
+                    <!-- Pergunta -->
+                    <p><strong>2. Calcule o cosseno de a e b:</strong></p><br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_9" value="errada"> cosseno a = 36/100 e cosseno b = 64/36. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_9" value="errada"> cosseno a = 64/36 e cosseno b = 36/64. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_9" value="correta"> cosseno a = 36/100 e cosseno b = 64/100. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_9" value="errada"> cosseno a = 64/100 e cosseno b = 36/100.
+                    <br><br>
+                    <!-- Resposta correta -->
+                    <p id="resposta_correta_9" class="verde"></p>
+                    <!-- Resposta errada -->
+                    <p id="resposta_errada_9" class="vermelho"></p><br>
+
+                    <!-- Pergunta -->
+                    <p><strong>3. Calcule a tangente de a e b:</strong></p><br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_10" value="errada"> tangente a = 36/36 e tangente b = 64/64. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_10" value="correta"> tangente a = 64/36 e tangente b = 36/64. <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_10" value="errada"> tangente a = 36/64 e tangente b = 64/64 <br>
+                    <!-- Alternativa -->
+                    <input type="radio" name="questao_10" value="errada"> tangente a = 64/64 e tangente b = 36/36
+                    <br><br>
+                    <!-- Resposta correta -->
+                    <p id="resposta_correta_10" class="verde"></p>
+                    <!-- Resposta errada -->
+                    <p id="resposta_errada_10" class="vermelho"></p><br>
+
                     <!-- Quantidade de acertos -->
                     <p id="quantidade_acertos" class="quantidade_acertos"></p> <br>
                     <!-- Botão para descobrir o resultado -->
@@ -239,72 +271,72 @@
                 </form>
                 <!-- Fim do <form> -->
 
-        </article>
-        <!-- Fim do <article> -->
-    </main>
-    <!-- Fim do <main> -->
-    <!-- Início do <footer> -->
-    <footer>
-        <!-- Início do <div> -->
-        <div class="container-footer">
+            </article>
+            <!-- Fim do <article> -->
+        </main>
+        <!-- Fim do <main> -->
+        <!-- Início do <footer> -->
+        <footer>
             <!-- Início do <div> -->
-            <div class="row-footer">
-                <!-- Início da coluna -->
-                <div class="footer-col">
-                    <!-- Subtítulo -->
-                    <h4>Pesquisa</h4>
-                    <!-- Início da <ul> -->
-                    <ul>
-                        <li>Brasil Escola</li>
-                        <li>Contéudo da Veridiana</li>
-                        <li>Toda Matéria</li>
-                    </ul>
-                    <!-- Fim da <ul> -->
+            <div class="container-footer">
+                <!-- Início do <div> -->
+                <div class="row-footer">
+                    <!-- Início da coluna -->
+                    <div class="footer-col">
+                        <!-- Subtítulo -->
+                        <h4>Pesquisa</h4>
+                        <!-- Início da <ul> -->
+                        <ul>
+                            <li>Brasil Escola</li>
+                            <li>Contéudo da Veridiana</li>
+                            <li>Toda Matéria</li>
+                        </ul>
+                        <!-- Fim da <ul> -->
+                    </div>
+                    <!-- Fim da coluna -->
+                    <!-- Início da coluna -->
+                    <div class="footer-col">
+                        <!-- Subtítulo -->
+                        <h4>Imagens</h4>
+                        <!-- Início da <ul> -->
+                        <ul>
+                            <li>Canva</li>
+                            <li>RemoveBG</li>
+                        </ul>
+                        <!-- Fim da <ul> -->
+                    </div>
+                    <!-- Fim da coluna -->
+                    <!-- Início da coluna -->
+                    <div class="footer-col">
+                        <!-- Subtítulo -->
+                        <h4>Exercícios</h4>
+                        <!-- Início da <ul> -->
+                        <ul>
+                            <li>Conteúdo da Veridiana</li>
+                            <li>Provas de Matemática</li>
+                        </ul>
+                        <!-- Fim da <ul> -->
+                    </div>
+                    <!-- Fim da coluna -->
+                    <!-- Início da coluna -->
+                    <div class="footer-col">
+                        <!-- Subtítulo -->
+                        <h4>Programação</h4>
+                        <!-- Início da <ul> -->
+                        <ul>
+                            <li>Projetos antigos</li>
+                            <li>Sites</li>
+                            <li>YouTube</li>
+                        </ul>
+                        <!-- Fim da <ul> -->
+                    </div>
+                    <!-- Fim da coluna -->
                 </div>
-                <!-- Fim da coluna -->
-                <!-- Início da coluna -->
-                <div class="footer-col">
-                    <!-- Subtítulo -->
-                    <h4>Imagens</h4>
-                    <!-- Início da <ul> -->
-                    <ul>
-                        <li>Canva</li>
-                        <li>RemoveBG</li>
-                    </ul>
-                    <!-- Fim da <ul> -->
-                </div>
-                <!-- Fim da coluna -->
-                <!-- Início da coluna -->
-                <div class="footer-col">
-                    <!-- Subtítulo -->
-                    <h4>Exercícios</h4>
-                    <!-- Início da <ul> -->
-                    <ul>
-                        <li>Conteúdo da Veridiana</li>
-                        <li>Provas de Matemática</li>
-                    </ul>
-                    <!-- Fim da <ul> -->
-                </div>
-                <!-- Fim da coluna -->
-                <!-- Início da coluna -->
-                <div class="footer-col">
-                    <!-- Subtítulo -->
-                    <h4>Programação</h4>
-                    <!-- Início da <ul> -->
-                    <ul>
-                        <li>Projetos antigos</li>
-                        <li>Sites</li>
-                        <li>YouTube</li>
-                    </ul>
-                    <!-- Fim da <ul> -->
-                </div>
-                <!-- Fim da coluna -->
+                <!-- Fim do <div> -->
             </div>
             <!-- Fim do <div> -->
-        </div>
-        <!-- Fim do <div> -->
-    </footer>
-    <!-- Fim do <footer> -->
+        </footer>
+        <!-- Fim do <footer> -->
     </div>
     <!-- Fim do <div> -->
     <!-- Uso do JavaScript -->

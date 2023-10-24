@@ -419,7 +419,7 @@ footer {
 /* Formulário */
 
 /* Estrutura do Grid do formulário */
-.container-triangulo {
+.container_triangulo {
     display: grid;
     grid-template-areas:
         "cabeca cabeca cabeca"
@@ -435,12 +435,12 @@ footer {
 
 /* Responsividade para computador */
 @media (max-width: 1024px) {
-    .container-triangulo {
+    .container_triangulo {
         display: grid;
-        grid-template-areas: 
-        "cabeca cabeca cabeca"
-        "corpo corpo corpo"
-        "perna perna perna";
+        grid-template-areas:
+            "cabeca cabeca cabeca"
+            "corpo corpo corpo"
+            "perna perna perna";
         grid-template-columns: auto 100% auto;
         grid-template-rows: auto auto auto;
     }
@@ -448,13 +448,13 @@ footer {
 
 /* Responsividade para tablet */
 @media (max-width: 768px) {
-    .container-triangulo {
+    .container_triangulo {
         display: grid;
-        grid-template-areas: 
-        "cabeca cabeca cabeca"
-        "corpo corpo corpo"
-        "corpo corpo corpo"
-        "perna perna perna";
+        grid-template-areas:
+            "cabeca cabeca cabeca"
+            "corpo corpo corpo"
+            "corpo corpo corpo"
+            "perna perna perna";
         grid-template-columns: auto 100% auto;
         grid-template-rows: auto auto auto auto;
     }
@@ -506,13 +506,13 @@ footer {
 
 /* Responsividade para celular */
 @media (max-width: 480px) {
-    .container-triangulo {
+    .container_triangulo {
         display: grid;
-        grid-template-areas: 
-        "cabeca"
-        "corpo"
-        "corpo"
-        "perna";
+        grid-template-areas:
+            "cabeca"
+            "corpo"
+            "corpo"
+            "perna";
         grid-template-columns: auto;
         grid-template-rows: auto;
     }

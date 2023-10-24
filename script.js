@@ -76,13 +76,22 @@ function resposta() {
     var resposta_6 = document.querySelector('input[name="questao_6"]:checked');
 
     /* Questão 7 */
-    var resposta_7 = document.querySelector('input[name="questao_7"]:checked'); 
+    var resposta_7 = document.querySelector('input[name="questao_7"]:checked');
+
+    /* Questão 8 */
+    var resposta_8 = document.querySelector('input[name="questao_8"]:checked');
+
+    /* Questão 9 */
+    var resposta_9 = document.querySelector('input[name="questao_9"]:checked');
+
+    /* Questão 10 */
+    var resposta_10 = document.querySelector('input[name="questao_10"]:checked');
 
     /* Contalizador */
     var contabilizador = 0;
 
     /* Se todas as questões forem respondidas */
-    if (resposta_1 && resposta_2 && resposta_3 && resposta_4 && resposta_5 && resposta_6 && resposta_7) {
+    if (resposta_1 && resposta_2 && resposta_3 && resposta_4 && resposta_5 && resposta_6 && resposta_7 && resposta_8 && resposta_9 && resposta_10) {
 
         /* Se a questão for correta, o usuário acerta */
         if (resposta_1.value == "correta") {
@@ -161,8 +170,41 @@ function resposta() {
             document.getElementById("resposta_errada_7").innerHTML = "Errou! A alternativa correta é a letra B."
         }
 
+        /* Se a questão for correta, o usuário acerta */
+        if (resposta_8.value == "correta") {
+            document.getElementById("resposta_correta_8").innerHTML = "Acertou! Parabéns!"
+            contabilizador = contabilizador + 1;
+        }
+
+        /* Se a questão estiver errada, o usuário erra */
+        else {
+            document.getElementById("resposta_errada_8").innerHTML = "Errou! A alternativa correta é a letra A."
+        }
+
+        /* Se a questão for correta, o usuário acerta */
+        if (resposta_9.value == "correta") {
+            document.getElementById("resposta_correta_9").innerHTML = "Acertou! Parabéns!"
+            contabilizador = contabilizador + 1;
+        }
+
+        /* Se a questão estiver errada, o usuário erra */
+        else {
+            document.getElementById("resposta_errada_9").innerHTML = "Errou! A alternativa correta é a letra C."
+        }
+
+        /* Se a questão for correta, o usuário acerta */
+        if (resposta_10.value == "correta") {
+            document.getElementById("resposta_correta_10").innerHTML = "Acertou! Parabéns!"
+            contabilizador = contabilizador + 1;
+        }
+
+        /* Se a questão estiver errada, o usuário erra */
+        else {
+            document.getElementById("resposta_errada_10").innerHTML = "Errou! A alternativa correta é a letra B."
+        }
+
         /* Quantidade de acertos */
-        document.getElementById("quantidade_acertos").innerHTML = "Total de pontos: " + contabilizador +"/10";
+        document.getElementById("quantidade_acertos").innerHTML = "Total de pontos: " + contabilizador + "/10";
 
     }
 
