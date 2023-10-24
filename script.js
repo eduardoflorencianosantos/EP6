@@ -69,11 +69,20 @@ function resposta() {
     /* Questão 4 */
     var resposta_4 = document.querySelector('input[name="questao_4"]:checked');
 
+    /* Questão 5 */
+    var resposta_5 = document.querySelector('input[name="questao_5"]:checked');
+
+    /* Questão 6 */
+    var resposta_6 = document.querySelector('input[name="questao_6"]:checked');
+
+    /* Questão 7 */
+    var resposta_7 = document.querySelector('input[name="questao_7"]:checked'); 
+
     /* Contalizador */
     var contabilizador = 0;
 
     /* Se todas as questões forem respondidas */
-    if (resposta_1 && resposta_2 && resposta_3 && resposta_4) {
+    if (resposta_1 && resposta_2 && resposta_3 && resposta_4 && resposta_5 && resposta_6 && resposta_7) {
 
         /* Se a questão for correta, o usuário acerta */
         if (resposta_1.value == "correta") {
@@ -119,8 +128,41 @@ function resposta() {
             document.getElementById("resposta_errada_4").innerHTML = "Errou! A alternativa correta é a letra A. Porque o Teorema de Pitágoras afirma que o quadrado da hipotenusa é igual à soma dos quadrados dos catetos em um triângulo retângulo."
         }
 
+        /* Se a questão for correta, o usuário acerta */
+        if (resposta_5.value == "correta") {
+            document.getElementById("resposta_correta_5").innerHTML = "Acertou! Parabéns!"
+            contabilizador = contabilizador + 1;
+        }
+
+        /* Se a questão estiver errada, o usuário erra */
+        else {
+            document.getElementById("resposta_errada_5").innerHTML = "Errou! A alternativa correta é a letra C."
+        }
+
+        /* Se a questão for correta, o usuário acerta */
+        if (resposta_6.value == "correta") {
+            document.getElementById("resposta_correta_6").innerHTML = "Acertou! Parabéns!"
+            contabilizador = contabilizador + 1;
+        }
+
+        /* Se a questão estiver errada, o usuário erra */
+        else {
+            document.getElementById("resposta_errada_6").innerHTML = "Errou! A alternativa correta é a letra D."
+        }
+
+        /* Se a questão for correta, o usuário acerta */
+        if (resposta_7.value == "correta") {
+            document.getElementById("resposta_correta_7").innerHTML = "Acertou! Parabéns!"
+            contabilizador = contabilizador + 1;
+        }
+
+        /* Se a questão estiver errada, o usuário erra */
+        else {
+            document.getElementById("resposta_errada_7").innerHTML = "Errou! A alternativa correta é a letra B."
+        }
+
         /* Quantidade de acertos */
-        document.getElementById("quantidade_acertos").innerHTML = "Total de pontos: " + contabilizador +"/4";
+        document.getElementById("quantidade_acertos").innerHTML = "Total de pontos: " + contabilizador +"/10";
 
     }
 
