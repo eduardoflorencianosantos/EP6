@@ -55,7 +55,7 @@ function nome() {
 
     /* Não irá aparecer o formulário se o usuário não preencher a coluna */
     else {
-        alert("Nome não atribuído");
+        alert("Nome não atribuído.");
         nome();
     }
 
@@ -133,7 +133,7 @@ function resposta() {
 
     /* Se usuário não responder nenhuma questão */
     else {
-        alert("Responda todas as questões")
+        alert("Responda todas as questões.")
     }
 
 }
@@ -155,7 +155,7 @@ function xpitagoras() {
 
     /* Não irá aparecer o formulário se o usuário não preencher a coluna */
     else {
-        alert("Nome não atribuído");
+        alert("Nome não atribuído.");
         nome();
     }
 
@@ -218,7 +218,7 @@ function respostapitagoras() {
 
     /* Se usuário não responder nenhuma questão */
     else {
-        alert("Responda todas as questões")
+        alert("Responda todas as questões.")
     }
 
 }
@@ -240,7 +240,7 @@ function xtrigonometricas() {
 
     /* Não irá aparecer o formulário se o usuário não preencher a coluna */
     else {
-        alert("Nome não atribuído");
+        alert("Nome não atribuído.");
         nome();
     }
 
@@ -303,7 +303,7 @@ function respostatrigonometricas() {
 
     /* Se usuário não responder nenhuma questão */
     else {
-        alert("Responda todas as questões")
+        alert("Responda todas as questões.")
     }
 
 }
@@ -325,7 +325,7 @@ function etriangulo() {
 
     /* Não irá aparecer o formulário se o usuário não preencher a coluna */
     else {
-        alert("Nome não atribuído");
+        alert("Nome não atribuído.");
         nome();
     }
 
@@ -359,7 +359,7 @@ function respostatriangulo() {
 
     /* Se usuário não responder nenhuma questão */
     else {
-        alert("Não deixe a questão em branco")
+        alert("Não deixe a questão em branco.")
     }
 
 }
@@ -381,7 +381,7 @@ function epitagoras() {
 
     /* Não irá aparecer o formulário se o usuário não preencher a coluna */
     else {
-        alert("Nome não atribuído");
+        alert("Nome não atribuído.");
         nome();
     }
 
@@ -415,7 +415,7 @@ function respostapitagoras2() {
 
     /* Se usuário não responder nenhuma questão */
     else {
-        alert("Não deixe a questão em branco")
+        alert("Não deixe a questão em branco.")
     }
 
 
@@ -438,7 +438,7 @@ function etrigonometricas() {
 
     /* Não irá aparecer o formulário se o usuário não preencher a coluna */
     else {
-        alert("Nome não atribuído");
+        alert("Nome não atribuído.");
         nome();
     }
 
@@ -471,7 +471,7 @@ function respostatrigonometricas2() {
 
     /* Se usuário não responder nenhuma questão */
     else {
-        alert("Não deixe a questão em branco")
+        alert("Não deixe a questão em branco.")
     }
 
 
