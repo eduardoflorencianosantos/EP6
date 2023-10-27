@@ -185,6 +185,10 @@ aside a {
 /* Parte visual do <footer> */
 footer {
     background-color: #000;
+}
+
+/* Estrutura do <footer> */
+footer {
     padding: 50px 0;
 }
 
@@ -207,10 +211,14 @@ footer {
     padding: 0 15px;
 }
 
+/* Parte visual do <h4> do <div class="footer-col"> */
+.footer-col h4 {
+    color: #fff;
+}
+
 /* Estrutura do <h4> do <div class="footer-col"> */
 .footer-col h4 {
     font-size: 22px;
-    color: #fff;
     margin-bottom: 20px;
     font-weight: 500;
     position: relative;
@@ -225,7 +233,76 @@ footer {
 /* Estrutura do <li> do <div class="footer-col"> */
 .footer-col ul li {
     margin: 10px 0;
+}
+
+/* Parte visual do <a> do <div class="footer-col"> */
+.footer-col ul li a {
     color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Estrutura do <a> do <div class="footer-col"> */
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+}
+
+/* Animação do <a> do <div class="footer-col"> */
+.footer-col ul li a:hover {
+    color: #ada9a9;
+    padding-left: 10px;
+}
+
+/* Estrutura das redes sociais */
+.footer-col .medias-sociais {
+    margin-top: 30px;
+}
+
+/* Parte visual do <a> do <div class="medias-sociais"> */
+.footer-col .medias-sociais a {
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.5s ease;
+}
+
+/* Estrutura do <a> do <div class="medias-sociais"> */
+.footer-col .medias-sociais a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Estrutura dos ícones dentro das redes sociais */
+.footer-col .medias-sociais a i {
+    font-size: 20px;
+}
+
+/* Animação das redes sociais */
+.footer-col .medias-sociais a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Parte visual do copyright */
+.footer-copyright {
+    color: #fff;
+}
+
+/* Estrutura do copyright */
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    margin-top: 50px;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -601,9 +678,27 @@ footer {
     color: #008000;
 }
 
+/* Animação com uma borda verde */
+.verde:hover {
+    color: #fff;
+    background-color: #008000;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
 /* Quando o usuário erra, irá aparecer uma mensagem vermelha */
 .vermelho {
     color: #ff0000;
+}
+
+/* Animação com uma borda vermelha */
+.vermelho:hover {
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s ease;
 }
 
 /* Estrutura da quantidade de acertos */
@@ -625,4 +720,11 @@ footer {
     cursor: pointer;
     width: 100%;
     font-size: 15px;
+}
+
+/* Borda no nome do usuário quando entra na formulário */
+#nome {
+    border: 2px solid #808080;
+    border-radius: 10px;
+    padding: 10px;
 }

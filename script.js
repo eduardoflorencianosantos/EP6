@@ -18,6 +18,11 @@ function deslocar(objeto, imagem) {
     academia.src = imagem;
 }
 
+/* Animação da propaganda de tênis */
+function tracejar(objeto, imagem) {
+    tenis.src = imagem;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
 
 /* Está chamando o <div class="hamburger"> */
@@ -35,11 +40,13 @@ hamburguer.addEventListener("click", () => {
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
 /* Formulário */
 
+/* Formulário de Múltipla Escolha do Triângulo Retângulo */
+
 /* Está chamando o onload="nome()"*/
 function nome() {
 
     /* Caixinha que aparece para digitar seu nome */
-    var nome_variavel = prompt("Coloque seu nome:");
+    var nome_variavel = prompt("Digite o seu nome:");
 
     /* Irá aparecer o formulário se o usuário preencher a coluna com um nome */
     if (nome_variavel) {
@@ -69,29 +76,11 @@ function resposta() {
     /* Questão 4 */
     var resposta_4 = document.querySelector('input[name="questao_4"]:checked');
 
-    /* Questão 5 */
-    var resposta_5 = document.querySelector('input[name="questao_5"]:checked');
-
-    /* Questão 6 */
-    var resposta_6 = document.querySelector('input[name="questao_6"]:checked');
-
-    /* Questão 7 */
-    var resposta_7 = document.querySelector('input[name="questao_7"]:checked');
-
-    /* Questão 8 */
-    var resposta_8 = document.querySelector('input[name="questao_8"]:checked');
-
-    /* Questão 9 */
-    var resposta_9 = document.querySelector('input[name="questao_9"]:checked');
-
-    /* Questão 10 */
-    var resposta_10 = document.querySelector('input[name="questao_10"]:checked');
-
     /* Contalizador */
     var contabilizador = 0;
 
     /* Se todas as questões forem respondidas */
-    if (resposta_1 && resposta_2 && resposta_3 && resposta_4 && resposta_5 && resposta_6 && resposta_7 && resposta_8 && resposta_9 && resposta_10) {
+    if (resposta_1 && resposta_2 && resposta_3 && resposta_4) {
 
         /* Se a questão for correta, o usuário acerta */
         if (resposta_1.value == "correta") {
@@ -137,6 +126,58 @@ function resposta() {
             document.getElementById("resposta_errada_4").innerHTML = "Errou! A alternativa correta é a letra A. Porque o Teorema de Pitágoras afirma que o quadrado da hipotenusa é igual à soma dos quadrados dos catetos em um triângulo retângulo."
         }
 
+        /* Quantidade de acertos */
+        document.getElementById("quantidade_acertos").innerHTML = "Total de pontos: " + contabilizador + "/4";
+
+    }
+
+    /* Se usuário não responder nenhuma questão */
+    else {
+        alert("Responda todas as questões")
+    }
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Formulário de Múltipla Escolha do Teorema de Pitágoras */
+
+/* Está chamando o onload="xpitagoras()"*/
+function xpitagoras() {
+
+    /* Caixinha que aparece para digitar seu nome */
+    var nome_variavel = prompt("Digite o seu nome:");
+
+    /* Irá aparecer o formulário se o usuário preencher a coluna com um nome */
+    if (nome_variavel) {
+        document.getElementById("nome").innerHTML = "Olá! " + nome_variavel + ". Bem-vindo(a) ao formulário de perguntas do nosso site. Estamos felizes em tê-lo(a) aqui e prontos para ajudar. Por favor, preencha as perguntas com cuidado e estaremos à disposição para qualquer dúvida.";
+    }
+
+    /* Não irá aparecer o formulário se o usuário não preencher a coluna */
+    else {
+        alert("Nome não atribuído");
+        nome();
+    }
+
+}
+
+/* Está chamando o onclick="respostapitagoras()" */
+function respostapitagoras() {
+
+    /* Questão 1 */
+    var resposta_5 = document.querySelector('input[name="questao_5"]:checked');
+
+    /* Questão 2 */
+    var resposta_6 = document.querySelector('input[name="questao_6"]:checked');
+
+    /* Questão 3 */
+    var resposta_7 = document.querySelector('input[name="questao_7"]:checked');
+
+    /* Contalizador */
+    var contabilizador = 0;
+
+    /* Se todas as questões forem respondidas */
+    if (resposta_5 && resposta_6 && resposta_7) {
         /* Se a questão for correta, o usuário acerta */
         if (resposta_5.value == "correta") {
             document.getElementById("resposta_correta_5").innerHTML = "Acertou! Parabéns!"
@@ -145,7 +186,7 @@ function resposta() {
 
         /* Se a questão estiver errada, o usuário erra */
         else {
-            document.getElementById("resposta_errada_5").innerHTML = "Errou! A alternativa correta é a letra C."
+            document.getElementById("resposta_errada_5").innerHTML = "Errou! A alternativa correta é a letra C) 10. Resolução: x² = 6² + 8² / x² = 36 + 64 / x² = 100 / x = √100 / x = 10."
         }
 
         /* Se a questão for correta, o usuário acerta */
@@ -156,7 +197,7 @@ function resposta() {
 
         /* Se a questão estiver errada, o usuário erra */
         else {
-            document.getElementById("resposta_errada_6").innerHTML = "Errou! A alternativa correta é a letra D."
+            document.getElementById("resposta_errada_6").innerHTML = "Errou! A alternativa correta é a letra D) 3. Resolução: 5² = x² + 4² / 25 = x² + 16² / 25 - 16 = x² / 9 = x² / x = √9 / x = 3."
         }
 
         /* Se a questão for correta, o usuário acerta */
@@ -167,9 +208,61 @@ function resposta() {
 
         /* Se a questão estiver errada, o usuário erra */
         else {
-            document.getElementById("resposta_errada_7").innerHTML = "Errou! A alternativa correta é a letra B."
+            document.getElementById("resposta_errada_7").innerHTML = "Errou! A alternativa correta é a letra B) 26. Resolução: 10² + 24² = x² / 100 + 576 = x² / 676 = x² / √676 = x / x = 26."
         }
 
+        /* Quantidade de acertos */
+        document.getElementById("quantidade_acertos").innerHTML = "Total de pontos: " + contabilizador + "/3";
+
+    }
+
+    /* Se usuário não responder nenhuma questão */
+    else {
+        alert("Responda todas as questões")
+    }
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Formulário de Múltipla Escolha das Razões Trigonométricas */
+
+/* Está chamando o onload="xtrigonometricas()"*/
+function xtrigonometricas() {
+
+    /* Caixinha que aparece para digitar seu nome */
+    var nome_variavel = prompt("Digite o seu nome:");
+
+    /* Irá aparecer o formulário se o usuário preencher a coluna com um nome */
+    if (nome_variavel) {
+        document.getElementById("nome").innerHTML = "Olá! " + nome_variavel + ". Bem-vindo(a) ao formulário de perguntas do nosso site. Estamos felizes em tê-lo(a) aqui e prontos para ajudar. Por favor, preencha as perguntas com cuidado e estaremos à disposição para qualquer dúvida.";
+    }
+
+    /* Não irá aparecer o formulário se o usuário não preencher a coluna */
+    else {
+        alert("Nome não atribuído");
+        nome();
+    }
+
+}
+
+/* Está chamando o onclick="respostatrigonometricas()" */
+function respostatrigonometricas() {
+
+    /* Questão 1 */
+    var resposta_8 = document.querySelector('input[name="questao_8"]:checked');
+
+    /* Questão 2 */
+    var resposta_9 = document.querySelector('input[name="questao_9"]:checked');
+
+    /* Questão 3 */
+    var resposta_10 = document.querySelector('input[name="questao_10"]:checked');
+
+    /* Contalizador */
+    var contabilizador = 0;
+
+    /* Se todas as questões forem respondidas */
+    if (resposta_8 && resposta_9 && resposta_10) {
         /* Se a questão for correta, o usuário acerta */
         if (resposta_8.value == "correta") {
             document.getElementById("resposta_correta_8").innerHTML = "Acertou! Parabéns!"
@@ -204,13 +297,182 @@ function resposta() {
         }
 
         /* Quantidade de acertos */
-        document.getElementById("quantidade_acertos").innerHTML = "Total de pontos: " + contabilizador + "/10";
+        document.getElementById("quantidade_acertos").innerHTML = "Total de pontos: " + contabilizador + "/3";
 
     }
 
     /* Se usuário não responder nenhuma questão */
     else {
-        alert("Responda todas as questões!")
+        alert("Responda todas as questões")
     }
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Formulário Discursivo de Triângulo Retângulo */
+
+/* Está chamando o onload="etriangulo()"*/
+function etriangulo() {
+
+    /* Caixinha que aparece para digitar seu nome */
+    var nome_variavel = prompt("Digite o seu nome:");
+
+    /* Irá aparecer o formulário se o usuário preencher a coluna com um nome */
+    if (nome_variavel) {
+        document.getElementById("nome").innerHTML = "Olá! " + nome_variavel + ". Bem-vindo(a) ao formulário de perguntas do nosso site. Estamos felizes em tê-lo(a) aqui e prontos para ajudar. Por favor, preencha as perguntas com cuidado e estaremos à disposição para qualquer dúvida.";
+    }
+
+    /* Não irá aparecer o formulário se o usuário não preencher a coluna */
+    else {
+        alert("Nome não atribuído");
+        nome();
+    }
+
+}
+
+/* Está chamando o onclick="respostatriangulo()" */
+function respostatriangulo() {
+
+    /* Questão 1 */
+    var resposta_11 = prompt()
+
+    /* Se todas as questões forem respondidas */
+    if (resposta_11) {
+
+        /* Se o usuário responder com um número menor que 90, ele erra */
+        if (resposta_11 < 90) {
+            alert("Errou! A resposta correta é 90°. Porque todo triângulo retângulo possui um ângulo reto de 90°.")
+        }
+
+        /* Se o usuário responder com um número maior que 90, ele erra */
+        else if (resposta_11 > 90) {
+            alert("Errou! A resposta correta é 90°. Porque todo triângulo retângulo possui um ângulo reto de 90°.")
+        }
+
+        /* Resposta correta */
+        if (resposta_11 == 90) {
+            alert("Acertou! Parabéns!")
+        }
+
+    }
+
+    /* Se usuário não responder nenhuma questão */
+    else {
+        alert("Não deixe a questão em branco")
+    }
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Formulário Discursivo do Teorema de Pitágoras */
+
+/* Está chamando o onload="epitagoras2()"*/
+function epitagoras() {
+
+    /* Caixinha que aparece para digitar seu nome */
+    var nome_variavel = prompt("Digite o seu nome:");
+
+    /* Irá aparecer o formulário se o usuário preencher a coluna com um nome */
+    if (nome_variavel) {
+        document.getElementById("nome").innerHTML = "Olá! " + nome_variavel + ". Bem-vindo(a) ao formulário de perguntas do nosso site. Estamos felizes em tê-lo(a) aqui e prontos para ajudar. Por favor, preencha as perguntas com cuidado e estaremos à disposição para qualquer dúvida.";
+    }
+
+    /* Não irá aparecer o formulário se o usuário não preencher a coluna */
+    else {
+        alert("Nome não atribuído");
+        nome();
+    }
+
+}
+
+/* Está chamando o onclick="respostapitagoras2()" */
+function respostapitagoras2() {
+
+    /* Questão 1 */
+    var pitagoras2 = prompt()
+
+    /* Se todas as questões forem respondidas */
+    if (pitagoras2) {
+
+        /* Se o usuário responder com um número menor que 24, ele erra */
+        if (pitagoras2 < 24) {
+            alert("Errou! A resposta correta é 24. Resolução: x² + 32² = 40² / x² + 1024 = 1600 / x² = 1600 - 1024 / x² = 576 / x² = √576 / x = 24.")
+        }
+
+        /* Se o usuário responder com um número maior que 24, ele erra */
+        else if (pitagoras2 > 24) {
+            alert("Errou! A resposta correta é 24. Resolução: x² + 32² = 40² / x² + 1024 = 1600 / x² = 1600 - 1024 / x² = 576 / x² = √576 / x = 24.")
+        }
+
+        /* Resposta correta */
+        if (pitagoras2 == 24) {
+            alert("Acertou! Parabéns!")
+        }
+
+    }
+
+    /* Se usuário não responder nenhuma questão */
+    else {
+        alert("Não deixe a questão em branco")
+    }
+
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Formulário Discursivo das Razões Trigonométricas */
+
+/* Está chamando o onload="etrigonometricas2()"*/
+function etrigonometricas() {
+
+    /* Caixinha que aparece para digitar seu nome */
+    var nome_variavel = prompt("Digite o seu nome:");
+
+    /* Irá aparecer o formulário se o usuário preencher a coluna com um nome */
+    if (nome_variavel) {
+        document.getElementById("nome").innerHTML = "Olá! " + nome_variavel + ". Bem-vindo(a) ao formulário de perguntas do nosso site. Estamos felizes em tê-lo(a) aqui e prontos para ajudar. Por favor, preencha as perguntas com cuidado e estaremos à disposição para qualquer dúvida.";
+    }
+
+    /* Não irá aparecer o formulário se o usuário não preencher a coluna */
+    else {
+        alert("Nome não atribuído");
+        nome();
+    }
+
+}
+
+/* Está chamando o onclick="respostatrigonometricas2()" */
+function respostatrigonometricas2() {
+
+    /* Questão 1 */
+    var trigonometricas2 = prompt()
+
+    /* Se todas as questões forem respondidas */
+    if (trigonometricas2) {
+
+        /* Se o usuário responder com um número menor que 3, ele erra */
+        if (trigonometricas2 < 3) {
+            alert("Errou! A resposta correta é 3. São eles: o seno, o cosseno e a tangente.")
+        }
+
+        /* Se o usuário responder com um número maior que 3, ele erra */
+        else if (trigonometricas2 > 3) {
+            alert("Errou! A resposta correta é 3. São eles: o seno, o cosseno e a tangente.")
+        }
+
+        /* Resposta correta */
+        if (trigonometricas2 == 3) {
+            alert("Acertou! Parabéns!")
+        }
+    }
+
+    /* Se usuário não responder nenhuma questão */
+    else {
+        alert("Não deixe a questão em branco")
+    }
+
 
 }

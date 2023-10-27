@@ -1,20 +1,22 @@
-<!-- Indica que é o HTML5 -->
+<!-- Indica que é o HTML mais recente -->
 <!DOCTYPE html>
 <!-- Página traduzida para o português -->
 <html lang="pt-br">
 <!-- Início do <head> -->
 
 <head>
-    <!-- Permite caracteres especias -->
+    <!-- Permite caracteres especiais -->
     <meta charset="UTF-8">
     <!-- Permite responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Nome da página na aba do navegador -->
-    <title>Matemática</title>
+    <title>Matemática - Ensino Médio em Ação</title>
     <!-- Estilização com CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Imagem na aba do navegador -->
     <link rel="shortcut icon" href="Imagens/aba-matematica2.png">
+    <!-- Utilização de ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <!-- Fim do <head> -->
 <!-- Início do <body> -->
@@ -83,7 +85,7 @@
                     <!-- Quebra de linha -->
                     <br>
                     <!-- Link para o exercício -->
-                    <a href="xexercicio.html" class="exercicios">Exercícios</a>
+                    <a href="xtriangulo.html" class="exercicios">Exercícios</a>
                 </section>
                 <!-- Fim da <section> -->
                 <!-- Início da <section> -->
@@ -149,7 +151,7 @@
                     <!-- Quebra de linha -->
                     <br>
                     <!-- Link para o exercício -->
-                    <a href="xexercicio.html" class="exercicios">Exercícios</a>
+                    <a href="xpitagoras.html" class="exercicios">Exercícios</a>
                 </section>
                 <!-- Fim da <section> -->
                 <!-- Início da <section> -->
@@ -231,7 +233,7 @@
                     <!-- Quebra de linha -->
                     <br>
                     <!-- Link para o exercício -->
-                    <a href="xexercicio.html" class="exercicios">Exercícios</a>
+                    <a href="xtrigonometricas.html" class="exercicios">Exercícios</a>
                 </section>
                 <!-- Fim da <section> -->
             </article>
@@ -260,11 +262,11 @@
             <!-- Início do <ul> -->
             <ul>
                 <!-- Link para o exercício -->
-                <li><a href="#">Triângulo Retângulo</a></li>
+                <li><a href="etriangulo.html">Triângulo Retângulo</a></li>
                 <!-- Link para o exercício -->
-                <li><a href="#">Teorema de Pitágoras</a></li>
+                <li><a href="epitagoras.html">Teorema de Pitágoras</a></li>
                 <!-- Link para o exercício -->
-                <li><a href="#">Razões Trigonométricas</a></li>
+                <li><a href="etrigonometricas.html">Razões Trigonométricas</a></li>
             </ul>
             <!-- Fim do <ul> -->
             <!-- Quebra de linha -->
@@ -309,6 +311,16 @@
                 </a>
             </div>
             <!-- Fim da propaganda -->
+            <!-- Quebra de linha -->
+            <br>
+            <!-- Início da propaganda -->
+            <div class="propaganda">
+                <a onmouseover="tracejar('tenis', 'Imagens/tenis2.png')"
+                    onmouseout="tracejar('tenis', 'Imagens/tenis1.png')">
+                    <img src="Imagens/tenis1.png" width="300px" id="tenis">
+                </a>
+            </div>
+            <!-- Fim da propaganda -->
         </aside>
         <!-- Fim do <aside> -->
         <!-- Início do <footer> -->
@@ -320,12 +332,15 @@
                     <!-- Início da coluna -->
                     <div class="footer-col">
                         <!-- Subtítulo -->
-                        <h4>Pesquisa</h4>
+                        <h4>Sobre</h4>
                         <!-- Início da <ul> -->
                         <ul>
-                            <li>Brasil Escola</li>
-                            <li>Contéudo da Veridiana</li>
-                            <li>Toda Matéria</li>
+                            <!-- Início do <li> -->
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Nossos serviços</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Termos de uso</a></li>
+                            <!-- Fim do <li> -->
                         </ul>
                         <!-- Fim da <ul> -->
                     </div>
@@ -333,11 +348,14 @@
                     <!-- Início da coluna -->
                     <div class="footer-col">
                         <!-- Subtítulo -->
-                        <h4>Imagens</h4>
+                        <h4>Categoria</h4>
                         <!-- Início da <ul> -->
                         <ul>
-                            <li>Canva</li>
-                            <li>RemoveBG</li>
+                            <!-- Início do <li> -->
+                            <li><a href="#">1° ano (Ensino Médio)</a></li>
+                            <li><a href="#">2° ano (Ensino Médio)</a></li>
+                            <li><a href="#">3° ano (Ensino Médio)</a></li>
+                            <!-- Fim do <li> -->
                         </ul>
                         <!-- Fim da <ul> -->
                     </div>
@@ -345,11 +363,15 @@
                     <!-- Início da coluna -->
                     <div class="footer-col">
                         <!-- Subtítulo -->
-                        <h4>Exercícios</h4>
+                        <h4>Disciplinas</h4>
                         <!-- Início da <ul> -->
                         <ul>
-                            <li>Conteúdo da Veridiana</li>
-                            <li>Provas de Matemática</li>
+                            <!-- Início do <li> -->
+                            <li><a href="#">Geografia</a></li>
+                            <li><a href="#">História</a></li>
+                            <li><a href="#">Língua Portuguesa</a></li>
+                            <li><a href="#">Matemática</a></li>
+                            <!-- Fim do <li> -->
                         </ul>
                         <!-- Fim da <ul> -->
                     </div>
@@ -357,20 +379,32 @@
                     <!-- Início da coluna -->
                     <div class="footer-col">
                         <!-- Subtítulo -->
-                        <h4>Programação</h4>
-                        <!-- Início da <ul> -->
-                        <ul>
-                            <li>Projetos antigos</li>
-                            <li>Sites</li>
-                            <li>YouTube</li>
-                        </ul>
-                        <!-- Fim da <ul> -->
+                        <h4>Redes sociais</h4>
+                        <!-- Início das redes sociais -->
+                        <div class="medias-sociais">
+                            <!-- Facebook -->
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <!-- Instagram -->
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <!-- Twitter -->
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <!-- GitHub -->
+                            <a href="https://github.com/eduardoflorencianosantos/EP6"><i class="fa fa-github"></i></a>
+                        </div>
+                        <!-- Fim das redes sociais -->
                     </div>
                     <!-- Fim da coluna -->
                 </div>
                 <!-- Fim do <div> -->
             </div>
             <!-- Fim do <div> -->
+            <!-- Início do copyright -->
+            <div class="footer-copyright">
+                <!-- Direitos autorais -->
+                <p>&#169
+                    2023. Todos os Direitos Reservados.</p>
+            </div>
+            <!-- Fim do copyright -->
         </footer>
         <!-- Fim do <footer> -->
     </div>
