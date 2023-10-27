@@ -90,7 +90,7 @@ function resposta() {
 
         /* Se a questão estiver errada, o usuário erra */
         else {
-            document.getElementById("resposta_errada_1").innerHTML = "Errou! A alternativa correta é a letra A. Porque os catetos são os lados que formam o ângulo reto em um triângulo retângulo, não o lado oposto."
+            document.getElementById("resposta_errada_1").innerHTML = "Errou! A alternativa correta é a letra A). Porque os catetos são os lados que formam o ângulo reto em um triângulo retângulo, não o lado oposto."
         }
 
         /* Se a questão for correta, o usuário acerta */
@@ -101,7 +101,7 @@ function resposta() {
 
         /* Se a questão estiver errada, o usuário erra */
         else {
-            document.getElementById("resposta_errada_2").innerHTML = "Errou! A alternativa correta é a letra D. Porque o cateto é o lado adjacente ao ângulo agudo, enquanto a hipotenusa é o lado oposto ao ângulo reto."
+            document.getElementById("resposta_errada_2").innerHTML = "Errou! A alternativa correta é a letra D). Porque o cateto é o lado adjacente ao ângulo agudo, enquanto a hipotenusa é o lado oposto ao ângulo reto."
         }
 
         /* Se a questão for correta, o usuário acerta */
@@ -112,7 +112,7 @@ function resposta() {
 
         /* Se a questão estiver errada, o usuário erra */
         else {
-            document.getElementById("resposta_errada_3").innerHTML = "Errou! A alternativa correta é a letra D. Porque a hipotenusa é o lado oposto ao ângulo reto em um triângulo retângulo."
+            document.getElementById("resposta_errada_3").innerHTML = "Errou! A alternativa correta é a letra D). Porque a hipotenusa é o lado oposto ao ângulo reto em um triângulo retângulo."
         }
 
         /* Se a questão for correta, o usuário acerta */
@@ -123,7 +123,7 @@ function resposta() {
 
         /* Se a questão estiver errada, o usuário erra */
         else {
-            document.getElementById("resposta_errada_4").innerHTML = "Errou! A alternativa correta é a letra A. Porque o Teorema de Pitágoras afirma que o quadrado da hipotenusa é igual à soma dos quadrados dos catetos em um triângulo retângulo."
+            document.getElementById("resposta_errada_4").innerHTML = "Errou! A alternativa correta é a letra A). Porque o Teorema de Pitágoras afirma que o quadrado da hipotenusa é igual à soma dos quadrados dos catetos em um triângulo retângulo."
         }
 
         /* Quantidade de acertos */
@@ -271,7 +271,7 @@ function respostatrigonometricas() {
 
         /* Se a questão estiver errada, o usuário erra */
         else {
-            document.getElementById("resposta_errada_8").innerHTML = "Errou! A alternativa correta é a letra A."
+            document.getElementById("resposta_errada_8").innerHTML = "Errou! A alternativa correta é a letra A). Resolução: seno a = 64/100 e seno b = 36/100."
         }
 
         /* Se a questão for correta, o usuário acerta */
@@ -282,7 +282,7 @@ function respostatrigonometricas() {
 
         /* Se a questão estiver errada, o usuário erra */
         else {
-            document.getElementById("resposta_errada_9").innerHTML = "Errou! A alternativa correta é a letra C."
+            document.getElementById("resposta_errada_9").innerHTML = "Errou! A alternativa correta é a letra C). Resolução: cosseno a = 36/100 e cosseno b = 64/100."
         }
 
         /* Se a questão for correta, o usuário acerta */
@@ -293,7 +293,7 @@ function respostatrigonometricas() {
 
         /* Se a questão estiver errada, o usuário erra */
         else {
-            document.getElementById("resposta_errada_10").innerHTML = "Errou! A alternativa correta é a letra B."
+            document.getElementById("resposta_errada_10").innerHTML = "Errou! A alternativa correta é a letra B). Resolução: tangente a = 64/36 e tangente b = 36/64."
         }
 
         /* Quantidade de acertos */
