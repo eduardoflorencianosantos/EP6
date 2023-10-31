@@ -53,12 +53,12 @@ function nome() {
     /* Caixinha que aparece para digitar seu nome */
     var nome_variavel = prompt("Digite o seu nome:");
 
-    /* Irá aparecer o formulário se o usuário preencher a coluna com um nome */
+    /* O usuário conseguirá responder o formulário se ele colocar um nome */
     if (nome_variavel) {
         document.getElementById("nome").innerHTML = "Olá! " + nome_variavel + ". Bem-vindo(a) ao formulário de perguntas do nosso site. Estamos felizes em tê-lo(a) aqui e prontos para ajudar. Por favor, preencha as perguntas com cuidado e estaremos à disposição para qualquer dúvida.";
     }
 
-    /* Não irá aparecer o formulário se o usuário não preencher a coluna */
+    /* O usuário não conseguirá responder o formulário se o usuário não colocar um nome */
     else {
         alert("Nome não atribuído, tente novamente.");
         nome();
